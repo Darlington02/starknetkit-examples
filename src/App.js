@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import ExtensionInjectors from "./components/ExtensionInjectors";
+import WebWalletArgentMobile from "./components/WebWalletArgentMobile";
+import FullConnectorOptions from "./components/FullConnectorOptions";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* this demonstrates how to enable the starknetkit modal with full connection options */}
+      <FullConnectorOptions />
+
+      {/* this demonstrates how to enable just Argent X and Braavos extension connectors */}
+      {/* <ExtensionInjectors />  */}
+
+      {/* this demonstrates how to enable just Web Wallet and Argent Mobile connectors  */}
+      {/* <WebWalletArgentMobile /> */}
+
+      {/* Need more connectors? Submit a PR😉 */}
     </div>
   );
 }
