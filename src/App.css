@@ -22,6 +22,25 @@
   cursor: pointer;
 }
 
+.connectorbtnlist {
+  display: flex;
+  max-height: 80px;
+  background: lightblue;
+}
+
+.connectorbtn {
+  background-color: white;
+  padding: 10px;
+  margin: 0px;
+  border: 10px solid lightblue;
+  border-radius: 20px !important;
+  font-size: 18px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: black;
+  width: 400px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
