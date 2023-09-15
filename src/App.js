@@ -17,27 +17,27 @@ function App() {
   ]
 
   return (
-    // {/* this demonstrates how to use starknetkit with starknet-react */}
-    <StarknetConfig 
-      className="App"
-      connectors={connectors}
-      autoConnect
-    >
-      <WithStarknetReact />
-    </StarknetConfig>
+    // {/* uncomment this to see how to use starknetkit with starknet-react */}
+    // <StarknetConfig 
+    //   className="App"
+    //   connectors={connectors}
+    //   autoConnect
+    // >
+    //   <WithStarknetReact />
+    // </StarknetConfig>
 
-    // <div className="App">
-    //   {/* this demonstrates how to enable the starknetkit modal with full connection options */}
-    //   {/* <FullConnectorOptions /> */}
+    <div className="App">
+      {/* uncomment this to see how to enable the starknetkit modal with full connection options */}
+      <FullConnectorOptions />
 
-    //   {/* this demonstrates how to enable just Argent X and Braavos extension connectors */}
-    //   {/* <ExtensionInjectors />  */}
+      {/* uncomment this to see how to enable just Argent X and Braavos extension connectors */}
+      {/* <ExtensionInjectors />  */}
 
-    //   {/* this demonstrates how to enable just Web Wallet and Argent Mobile connectors  */}
-    //   {/* <WebWalletArgentMobile /> */}
+      {/* uncomment this to see how to enable just Web Wallet and Argent Mobile connectors  */}
+      {/* <WebWalletArgentMobile /> */}
 
-    //   {/* Need more connectors? Submit a PR😉 */}
-    // </div>
+      {/* Need more connectors? Submit a PR😉 */}
+    </div>
   );
 }
 
